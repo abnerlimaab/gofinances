@@ -11,7 +11,7 @@ import {
   UserInfo,
   UserName,
   Icon,
-  HighlightCards
+  HighlightCards,
 } from "./styles";
 
 export function Dashboard() {
@@ -30,13 +30,28 @@ export function Dashboard() {
               <UserName>Abner</UserName>
             </User>
           </UserInfo>
-          <Icon name="power"/>
+          <Icon name="power" />
         </UserWrapper>
       </Header>
       <HighlightCards>
-        <HighlightCard />
-        <HighlightCard />
-        <HighlightCard />
+        <HighlightCard
+          type="up"
+          title="Entradas"
+          amount="R$ 17.400,00"
+          lastTransiction="Última entrada dia 13 de abril"
+        />
+        <HighlightCard
+          type="down"
+          title="Saídas"
+          amount="R$ 1.259,00"
+          lastTransiction="Última entrada dia 03 de abril"
+        />
+        <HighlightCard
+          type="total"
+          title="Total"
+          amount="R$ 16.141,00"
+          lastTransiction="01 à 16 de abril"
+        />
       </HighlightCards>
     </Container>
   );
