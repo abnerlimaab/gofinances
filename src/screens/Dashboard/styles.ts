@@ -1,8 +1,7 @@
 import styled from "styled-components/native";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
-import { Feather } from "@expo/vector-icons";
 import { getStatusBarHeight } from "react-native-iphone-x-helper";
-
+import Icon from "react-native-vector-icons/Feather";
 
 export const Container = styled.View`
   flex: 1;
@@ -54,7 +53,7 @@ export const UserName = styled.Text`
   font-size: ${RFValue(18)}px;
 `;
 
-export const Icon = styled(Feather)`
+export const IconStyled = styled(Icon)`
   color: ${({ theme }) => theme.colors.secundary};
   font-size: ${RFValue(24)}px;
 `;

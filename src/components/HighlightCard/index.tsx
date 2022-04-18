@@ -4,7 +4,7 @@ import {
   Container,
   Header,
   Title,
-  Icon,
+  IconStyled,
   Footer,
   Amount,
   LastTransaction,
@@ -28,7 +28,7 @@ export function HighlightCard({ type, title, amount, lastTransiction }: Props) {
     <Container type={type}>
       <Header>
         <Title type={type}>{title}</Title>
-        <Icon name={icon[type]} type={type} />
+        <IconStyled name={icon[type]} type={type} />
       </Header>
 
       <Footer>

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components/native";
-import { Feather } from "@expo/vector-icons";
+import Icon from "react-native-vector-icons/Feather";
 import { RFValue } from "react-native-responsive-fontsize";
 
 interface TypeProps {
@@ -28,7 +28,7 @@ export const Title = styled.Text<TypeProps>`
     type === "total" ? theme.colors.shape : theme.colors.text_dark};
 `;
 
-export const Icon = styled(Feather)<TypeProps>`
+export const IconStyled = styled(Icon)<TypeProps>`
   font-size: ${RFValue(40)}px;
   ${({ type }) =>
     type === "up" &&

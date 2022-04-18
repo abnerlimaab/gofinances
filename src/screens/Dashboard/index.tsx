@@ -10,7 +10,7 @@ import {
   UserGreeting,
   UserInfo,
   UserName,
-  Icon,
+  IconStyled,
   HighlightCards,
 } from "./styles";
 
@@ -30,7 +30,7 @@ export function Dashboard() {
               <UserName>Abner</UserName>
             </User>
           </UserInfo>
-          <Icon name="power" />
+          <IconStyled name="power"/>
         </UserWrapper>
       </Header>
       <HighlightCards>
